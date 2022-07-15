@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    background-image: url("./header-background/Header.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu-bar{
+    background-image: linear-gradient(-90deg, #d38312, #a83279);
+}
+
+.nav-link{
+    font-size: 20px;
+    margin: 3px;
+    color: #fff!important;
+    font-weight: 900;
+}
+
+#header .header-background img{
+    width: 100%;
+}
+
+/*ribbon*/
+#ribbon{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(-90deg, #a83279, #d38312);
+}
+
+/*info panel*/
+#info{
+    margin: 10px;
+}
+
+#info .grid-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.big-logo{
+    border-right: 10px double #000;
+    padding-bottom: 30px;
+}
+
+#info .grid-info .big-logo h2,
+#info .grid-info .main-info h2,
+#main .container-men h2,
+#main .container-female h2{
+    font-family: 'Dancing Script';
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#info .grid-info .big-logo img{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 400px;
+}
+
+#info .grid-info .main-info p{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    line-height: 90px;
+    font-size: 25px;
+}
+
+/*Main*/
+#main{
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+#main .container-men,
+#main .container-female{
+    margin-bottom: 20px;
+}
+
+#main .grid-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#main .grid-container .row img{
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+    width:100%;
+}
+
+#main .grid-container .row img:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+#main .shop-info p{
+    font-family: 'Dancing Script';
+    margin-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#main .shop-info a{
+    font-family: 'Dancing Script';
+}
+
+/*footer*/
+footer{
+    background-image: linear-gradient(-90deg, #a83279, #d38312);
+}
+
+.social-network{
+    display: flex;
+    align-items: center;
+}
+
+.social-network ul{
+    display: flex;
+    margin: 0 auto;
+    list-style: none;
+    padding: 2em;
+}
+
+.social-network ul > li{
+    margin: 0 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    #header .header-title h1{
+        font-size: 60px;
+    }
+
+    #info .grid-info{
+        display: block;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .big-logo{
+        border-right: none;
+        border-bottom: 10px double #000;
+    }
+
+    #info .grid-info .big-logo img{
+        width: 300px;
+    }
+
+    #main .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hidden{
+        display: grid;
+    }
+}
